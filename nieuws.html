@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuws | Overlegplatform Associate degree</title>
+
+    <link rel="stylesheet" href="https://isaaceswa.github.io/look-and-feel-styleguide/styleguide-ad-connect.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo's -->
+        <div class="header-leftside">
+            <a href="./index.html">
+                <img class="logo-secundair" src="assets/logo-secundair.png" alt="logo voor mobiel">
+            </a>
+            <a href="./index.html">
+                <img class="logo-primair" src="assets/logo-primair.png" alt="logo voor desktop">
+            </a>
+        </div>
+        <div class="header-rightside">
+            <nav class="menu">
+
+                <!-- Menu voor mobiel -->
+                <ul class="sidebar">
+                    <li id="close-icon" onclick=hideSidebar()><svg height="30" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Associate Degree</a></li>
+                    <li><a href="./nieuws.html">Nieuws</a></li>
+                    <li><a href="#">Evenementen</a></li>
+                    <li><a href="./over-ons.html">Over ons</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <!-- Menu voor desktop -->
+                <ul class="navigation">
+                    <!-- <li><a href="./index.html">Home</a></li> -->
+                    <li><a href="#">Associate Degree</a></li>
+                    <li><a href="./nieuws.html">Nieuws</a></li>
+                    <li><a href="#">Evenementen</a></li>
+                    <li><a href="./over-ons.html">Over ons</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <button id="hamburger-icon" onclick=showSidebar() aria-label="Open menu"><svg height="30"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="featured-half">
+            <div class="featured-half-content">
+                <p class="subtitle">Nieuws</p>
+                <h2>Wat is er nieuw?</h2>
+                <p>Vanuit het platform worden <b>regelmatig activiteiten</b> ondernomen, in grotere en kleinere
+                    deelgroepen.
+                    Heb je vanuit <b>jouw hogeschool/Ad opleiding</b> een bijeenkomst in de planning waarin kennisdelen
+                    rondom
+                    Ad topics aan de orde is, én staat zo’n moment open voor collega’s van andere hogescholen dan is er
+                    uiteraard de mogelijkheid dit <b>via het platform te communiceren</b>. 
+                    <br>
+                    <br>
+                    Stuur daarvoor tijdig je uitnodiging aan het platform (thema, doelgroep, datum tijd en wijze van
+                    aanmelden) dan kunnen wij verzorgen dat de uitnodiging wordt gepubliceerd en rondgestuurd aan de
+                    leden van het platform. Hieronder vind je <b>updates en korte verslagen</b> van die evenementen, en
+                    ook
+                    andere nieuwsberichten over Associate degree opleidingen.
+                </p>
+                <a href="#" class="btn-primair">Evenementen bekijken</a>
+            </div>
+            <div class="featured-half-img-container">
+                <img src="assets/lachende-man.jpeg" alt="lachende man" class="featured-half-img">
+            </div>
+        </section>
+
+        <section class="home-news">
+            <h2>Nieuws</h2>
+            <button class="sort-button">Sorteer op nieuwste eerst<svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
+                </svg></button>
+
+
+            <div class="news-cards">
+
+                <article class="news-card">
+                    <img src="assets/samen-sterker-in-niveau-5.jpg"
+                        alt="Foto van bijeenkomst samen sterker in niveau 5">
+                    <div class="panel">
+                        <h3>Samen sterker in niveau 5</h3>
+                        <p>In een tijd waarin Ad-onderwijs groeit en verandert, is de kracht van een sterke community
+                            onmisbaar...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2025-10-31">31-10-2025</time></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="assets/ad-Roadshow.jpg" alt="Foto van Ad Roadshow bus">
+                    <div class="panel">
+                        <h3>Ad Roadshow</h3>
+                        <p>Om in gesprek te gaan over studentsucces: de juiste student op de juiste plaats, heeft het
+                            Instituut...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2024-11-19">19-11-2024</time></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="assets/van-adtalent-tot-impactmaker.jpg" alt="Foto van een Ad Talent persoon">
+                    <div class="panel">
+                        <h3>Ad Talent tot Impactmaker</h3>
+                        <p>Voor mij betekent impact maken dat je iets kunt betekenen voor anderen...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2025-03-21">21-03-2025</time></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="assets/aders-zijn-doeners-met-denkkracht.jpg" alt="Foto van Associate degree docenten">
+                    <div class="panel">
+                        <h3>Ad’ers zijn doeners</h3>
+                        <p>Op vrijdag 11 april vond bij Aeres Hogeschool in Dronten de vijfde editie plaats van de
+                            Landelijke Ad-dag...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2025-04-23">23-04-2025</time></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="assets/innovatie-met-impact.jpg" alt="Foto van een AD school">
+                    <div class="panel">
+                        <h3>Innovatie met impact</h3>
+                        <p>Ben jij klaar om geïnspireerd te raken door hoe Associate degree-professionals het verschil
+                            maken — in hun werk...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2025-11-12">12-11-2025</time></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="assets/making-waves.jpg"
+                        alt="Foto van een document over handreiking impactmakerschap op niveau 5">
+                    <div class="panel">
+                        <h3>Making Waves</h3>
+                        <p>Op vrijdag 31 oktober 2025 ben je van harte uitgenodigd voor Making Waves: een inspirerende
+                            bijeenkomst...</p>
+                        <div class="news-card-bottom">
+                            <a href="#" class="btn-primair-small">Lees meer</a>
+                            <p class="news-date"><time datetime="2025-06-23">23-06-2025</time></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="logos">
+            <div class="logos-slide">
+                <img src="assets/logos-slider/ada.jpg" alt="Associate degrees academie logo">
+                <img src="assets/logos-slider/aeres.png" alt="aeres hogeschool logo">
+                <img src="assets/logos-slider/avans-academie.jpg" alt="avans academie logo">
+                <img src="assets/logos-slider/dordrecht.webp" alt="dordrecht academy logo">
+                <img src="assets/logos-slider/driestar.png" alt="driestar educatief logo">
+                <img src="assets/logos-slider/fontys.png" alt="fontys university logo">
+                <img src="assets/logos-slider/grensland.jpg" alt="grensland college logo">
+                <img src="assets/logos-slider/han.png" alt="han university logo">
+                <img src="assets/logos-slider/hanze.png" alt="hanze logo">
+                <img src="assets/logos-slider/HAS-logo.webp" alt="has green academy logo">
+                <img src="assets/logos-slider/hogeschoolleiden.png" alt="hku logo">
+                <img src="assets/logos-slider/hu.jpg" alt="hu logo">
+                <img src="assets/logos-slider/HvA.png" alt="hva logo">
+                <img src="assets/logos-slider/hzuni.jpeg" alt="hz university logo">
+                <img src="assets/logos-slider/InHolland.jpg" alt="inholland logo">
+                <img src="assets/logos-slider/ipabo.jpg" alt="ipabo logo">
+                <img src="assets/logos-slider/Iselinge.png" alt="iselinge hogeschool logo">
+                <img src="assets/logos-slider/kpz.png" alt="hogeschool kpz logo">
+                <img src="assets/logos-slider/logo-CHE.jpg" alt="christelijke hogeschool ede logo">
+                <img src="assets/logos-slider/NHLStenden.png" alt="nhl stenden hogeschool logo">
+                <img src="assets/logos-slider/OIP.jpeg" alt="Breda university logo">
+                <img src="assets/logos-slider/prohaagse.png" alt="de haagse hogeschool logo">
+                <img src="assets/logos-slider/rotterdamacademy.png" alt="rotterdam academy logo">
+                <img src="assets/logos-slider/Windesheim-logo.png" alt="hogeschool Windesheim logo">
+                <img src="assets/logos-slider/zuyd.png" alt="zuyd university logo">
+                <img src="assets/logos-slider/HKU.png" alt="HKU logo">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-col-01">
+            <img src="assets/white-logo.png" alt="">
+            <p><a href="mailto:platformassociatedegrees@outlook.com">platformassociatedegrees@outlook.com</a></p>
+        </div>
+
+        <div class="footer-col-02">
+            <h2>Navigeer</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Informatie</a></li>
+                    <li><a href="#">Nieuws & Evenementen</a></li>
+                    <li><a href="#">Over ons</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-col-03">
+            <h2>Support</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Cookieverklaring</a></li>
+                    <li><a href="#">Privacyverklaring</a></li>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src=""></script>
+</body>
+
+</html>
