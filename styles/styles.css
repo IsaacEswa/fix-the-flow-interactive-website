@@ -431,6 +431,7 @@ section
     text-align: center;
 }
 
+/* Begin filter knop op nieuwspagina */
 .sort-button {
     display: flex;
     align-items: center;
@@ -467,6 +468,8 @@ section
 .news-cards.sorted-on-date {
     display: none;
 }
+
+/* Einde filter knop op nieuwspagina */
 
 .news-cards {
     /* display: flex; */

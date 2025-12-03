@@ -1,4 +1,6 @@
+// Filter knop op nieuwspagina
 // 1. Selecteer de button waarmee ik de artikelen op datum sorteer
+
 let sorteerButton = document.querySelector('.sort-button');
 
 // 2. Wacht tot iemand op die button klikt
