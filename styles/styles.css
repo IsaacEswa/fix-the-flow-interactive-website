@@ -98,6 +98,11 @@ body {
     color: white;
 }
 
+.hero a:hover {
+    background: #862d12;
+
+}
+
 
 
 h1,
