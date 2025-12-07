@@ -18,26 +18,26 @@ function showSidebar() {
 
     // pak alle focusbare elementen in de sidebar
     const focusable = sidebar.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
+    const firstFocusableElement = focusable[0];
+    const lastFocusableElement = focusable[focusable.length - 1];
 
     // Focus gaat naar de close button
-    first.focus();
+    firstFocusableElement.focus();
 
     // Trap focus inside sidebar
     sidebar.addEventListener("keydown", function (e) {
         if (e.key === "Tab") {
             if (e.shiftKey) {
                 // Shift+Tab van eerste element → ga naar laatste
-                if (document.activeElement === first) {
+                if (document.activeElement === firstFocusableElement) {
                     e.preventDefault();
-                    last.focus();
+                    lastFocusableElement.focus();
                 }
             } else {
                 // Tab van laatste element → ga naar eerste
-                if (document.activeElement === last) {
+                if (document.activeElement === lastFocusableElement) {
                     e.preventDefault();
-                    first.focus();
+                    firstFocusableElement.focus();
                 }
             }
         }
