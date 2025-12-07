@@ -98,7 +98,8 @@ body {
     color: white;
 }
 
-.hero a:hover {
+.hero a:hover,
+.hero a:focus {
     background: #862d12;
 
 }
@@ -508,9 +509,9 @@ section
     fill: white;
 }
 
-.news-cards.sorted-on-date {
+/* .news-cards.sorted-on-date {
     display: none;
-}
+} */
 
 /* Einde filter knop op nieuwspagina */
 
