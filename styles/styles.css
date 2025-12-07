@@ -54,9 +54,14 @@ body {
     }
 }
 
+.overlay {
+    border-image:
+        linear-gradient(to right, hsl(0 0% 0% / .9),
+            hsl(0 0% 0% / .4)) fill 1;
+}
 
 .hero {
-    background-image: url("../assets/hero-bg.jpg");
+    background-image: url("../assets/hero-bg-light.jpg");
     padding-top: 65px;
     padding-bottom: 130px;
     padding-left: 15px;
@@ -71,10 +76,13 @@ body {
 
     @media (min-width: 768px) {
         padding: 70px 50px 150px;
+        background-image: url("../assets/hero-image-light.jpg");
+
     }
 
     @media (min-width: 1024px) {
         padding: 100px 50px 120px;
+
     }
 }
 
