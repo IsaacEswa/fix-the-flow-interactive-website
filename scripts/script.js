@@ -1,82 +1,3 @@
-// // Filter knop op nieuwspagina
-// // 1. Selecteer de button waarmee ik de artikelen op datum sorteer
-
-// let sortButton = document.querySelector('.sort-button');
-
-// // 2. Wacht tot iemand op die button klikt
-// sortButton.addEventListener('click', function () {
-
-//     // 3. Sorteer de artikelen op datum (nieuwste eerst) met datetime attribute
-//     document.querySelector('.news-cards').classList.toggle('sorted-on-date');
-//     sortButton.classList.toggle('sorted');
-
-//     // 4. Verander de tekst van de button
-//     //    sortButton.textContent = sortButton.classList.contains('sorted') ? 'Sorteer op relevantie' : 'Sorteer op datum';
-
-//     sortButton.innerHTML = sortButton.classList.contains('sorted') ? `Toon meest relevante artikelen <svg xmlns="http://www.w3.org/2000/svg"
-//     viewBox = "0 0 640 640" >
-//         <path
-//             d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
-//                 </svg > ` : `Toon nieuwste artikelen <svg xmlns="http://www.w3.org/2000/svg"
-//     viewBox = "0 0 640 640" >
-//         <path
-//             d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
-//                 </svg > `
-// });
-
-
-
-
-// // Stap 1: Selecteer de button en de container met nieuwsartikelen
-// let sortButton = document.querySelector('.sort-button');
-// let newsCards = document.querySelector('.news-cards');
-// let originalOrder = null;
-
-// sortButton.addEventListener('click', function () { // normale functie
-
-//     // Opslaan originele volgorde
-//     if (!originalOrder) originalOrder = [...newsCards.children];
-
-//     let sorted = sortButton.classList.contains('sorted');
-
-//     if (!sorted) {
-//         // Sorteer op datum
-//         [...newsCards.children]
-//             .sort(function (a, b) {  // gewone functie
-//                 return new Date(b.querySelector('time').dateTime) -
-//                     new Date(a.querySelector('time').dateTime);
-//             })
-//             .forEach(function (card) {  // gewone functie
-//                 newsCards.append(card);
-//             });
-
-//         sortButton.classList.add('sorted');
-//         sortButton.innerHTML = `Gesorteerd op nieuwste artikelen <svg xmlns="http://www.w3.org/2000/svg"
-// //     viewBox = "0 0 640 640" >
-// //         <path
-// //             d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
-// //                 </svg > `;
-
-//     } else {
-//         // Herstel originele volgorde
-//         originalOrder.forEach(function (card) {
-//             newsCards.append(card);
-//         });
-
-//         originalOrder = null;
-//         sortButton.classList.remove('sorted');
-//         sortButton.innerHTML = `Sorteer op nieuwste artikelen <svg xmlns="http://www.w3.org/2000/svg"
-// //     viewBox = "0 0 640 640" >
-// //         <path
-// //             d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
-// //                 </svg > `;
-//     }
-// });
-
-
-
-
-
 // Stap 1: Selecteer de button en de container met nieuwsartikelen
 let sortButton = document.querySelector('.sort-button');
 let newsCards = document.querySelector('.news-cards');
@@ -128,3 +49,13 @@ sortButton.addEventListener('click', function () {
             newsCards.append(card); // append ze opnieuw: oorspronkelijke volgorde komt terug
         });
 
+        // Stap 10: Reset de variabele en pas de button aan naar 'niet gesorteerd' 
+        originalOrder = null;
+        sortButton.classList.remove('sorted'); // haal de 'sorted' class weg van de button
+        sortButton.innerHTML = `Sorteer op nieuwste artikelen <svg xmlns="http://www.w3.org/2000/svg"
+//     viewBox = "0 0 640 640" >
+//         <path
+//             d="M470.6 566.6L566.6 470.6C575.8 461.4 578.5 447.7 573.5 435.7C568.5 423.7 556.9 416 544 416L480 416L480 96C480 78.3 465.7 64 448 64C430.3 64 416 78.3 416 96L416 416L352 416C339.1 416 327.4 423.8 322.4 435.8C317.4 447.8 320.2 461.5 329.3 470.7L425.3 566.7C437.8 579.2 458.1 579.2 470.6 566.7zM214.6 73.4C202.1 60.9 181.8 60.9 169.3 73.4L73.3 169.4C64.1 178.6 61.4 192.3 66.4 204.3C71.4 216.3 83.1 224 96 224L160 224L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 224L288 224C300.9 224 312.6 216.2 317.6 204.2C322.6 192.2 319.8 178.5 310.7 169.3L214.7 73.3z" />
+//                 </svg > `;
+    }
+});
